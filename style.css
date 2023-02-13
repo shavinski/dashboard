@@ -82,6 +82,8 @@
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 20px;
+    box-shadow: 0px 4px 5px -2px black;
+    position: relative;
 }
 
 .header-top {
@@ -168,28 +170,63 @@
     grid-template-columns: 2fr 1fr;
 }
 
+
 .content-left {
-    background-color: var(--pink-purple);
+    background-color: var(--white-purple);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 27vw 23vw;
+    grid-template-rows: 8% repeat(3, 30%);
+}
+
+.content-left-heading, .announcements-header {
+    margin:.5rem;
+    font-family: Orbitron;
+    font-size: .8vw;
 }
 
 .card {
-    background-color: var(--dark-lavender);
-    width: 21vw;
-    height: 9vw;
-    border-radius: 20px;
-    margin: 2em;
+    background-color: var(--white);
+    font-family: Orbitron;
+    width: 24vw;
+    height: 8vw;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 1em;
     padding: 1em;
-    font-size: .9vw;
+    font-size: 0.9vw;
     display: grid;
+    grid-template-rows: 20% 60% 20%;
+    border-left: 12px solid var(--darker-purple);
+    box-shadow: 0px 8px 5px -4px rgb(67, 67, 67);
+}
+
+.card-icons-box {
+    justify-self: end;
+}
+
+.icon-card {
+    height: 3vh;
+    width: 3vw;   
+}
+
+.icon-card:hover {
+    cursor: pointer;
+    transform: scale(1.15);
 }
 
 .context {
     max-width: 35ch;
+    font-size: .8em;
 }
 
 .content-right {
-    background-color: var(--dark-pinkpurple);
+    font-family: Orbitron;
+    background-color: var(--white-purple);
+    display: grid;
 }
+
+.announcements-container {
+    display: grid;
+    grid-template-rows: 8% repeat(3, 10%);
+    background-color: #9333ea;
+}
+
