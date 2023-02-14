@@ -226,7 +226,7 @@
     grid-template-rows: 40vh 40vh;
 }
 
-.announcements-container {
+.announcements-container, .trending-container {
     display: grid;
     grid-template-rows: 10% 60%;
     border: black;
@@ -266,10 +266,10 @@
     object-fit: cover;
 }
 
-.trending-container {
+/* .trending-container {
     padding-right: 2em;
     width: 65%;
-}
+} */
 
 .trending {
     background-color: var(--white);
